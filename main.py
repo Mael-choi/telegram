@@ -70,4 +70,5 @@ def execute_func(second=1.0):
     count = count + 1
     threading.Timer(second, execute_func, [second]).start()
 
-execute_func(600.0)
+if __name__ == '__main__':
+    execute_func(600.0)
